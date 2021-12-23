@@ -1,1 +1,3 @@
-#hello this my first concious rep 
+#hello this my first concious repo
+
+#trying update the the readmd file

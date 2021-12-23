@@ -1,0 +1,16 @@
+* { font-family: sans-serif;
+  
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 7px 10px;
+  background-color: dodgerblue;
+  cursor: pointer;
+  position: relative;
+  left: 100px;
+  top:50px;
+  color: white;
+  font-size: 20px;
+
+}

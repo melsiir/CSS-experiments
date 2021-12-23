@@ -1,0 +1,37 @@
+
+ * {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .loader {
+   background-color: whitesmoke;
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   /* position: relative; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: opacity 1s ease-in-out;
+ }
+
+ .dot {
+   background: #111;
+   width: 25px;
+   height: 25px;
+   margin: 0 7px;
+   border-radius: 50%;
+   animation: load infinite 0.3s alternate ;
+ }
+
+ .d2 {
+   animation-delay: 0.05s;
+ }
+ .d3 {
+   animation-delay: 0.1s;
+ }
+ @keyframes load {
+   100% {
+     transform: translateY(-30px);
+   }
+ }

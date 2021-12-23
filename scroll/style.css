@@ -1,0 +1,41 @@
+* {
+  height: 5000px;
+  
+}  
+
+.top {
+   position: fixed;
+   padding: .2rem;
+   border-radius: 100%;
+   background: dodgerblue;
+   bottom: 20px;
+   border: none;
+   right: 20px;
+   width: 3rem;
+   height: 3rem;
+   opacity: 100%;
+   transition: opacity 1s;
+}
+
+.top:hover {
+  opacity: 60%;
+}
+.svg {
+  width: 2rem;
+  height: 2rem;
+  color: wheat;
+}
+
+.hidden {
+  display: none;
+  opacity: 0%;
+}
+
+#progress {
+  height: 2px;
+  border-radius: 2px;
+  position: fixed;
+  background: cyan;
+  top: 0;
+  left: 0;
+}
