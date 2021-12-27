@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+* {
+  font-family: fantasy;  
+}
+
+.box {
+  width: 10em;
+  height: 10em;
+  background: gold;
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  border-radius: 15px;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+
+p {
+  font-size: 8em;
+  position: absolute;
+  top: -130px;
+  left: 90px;
+  color: white;
+  opacity: 0.5;
+  font-family: Oswald;
+  user-select: none;
+
+}
+
+h1 {
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  font-family: arial;
+  opacity: 0.6;
+  transition: opacity 0.8s;
+  user-select: none;
+}
+
+h1:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=BioRhyme&family=Bungee&family=Cairo&family=Cormorant+Garamond&family=Eczar&family=Ewert&family=Gravitas+One&family=IBM+Plex+Sans&family=Libre+Baskerville&family=Libre+Franklin&family=Lora:wght@700&family=Merriweather&family=Merriweather+Sans&family=Mogra&family=Monoton&family=Neuton&family=Oswald&family=Poppins&family=Rakkas&family=Readex+Pro&family=Roboto+Condensed&family=Space+Mono&family=Trocchi&family=Work+Sans&family=Yatra+One&display=swap');
+
+/* @import url("./Poppins-Regular.ttf"); */
+
+.art-grid {
+ font-family: Oswald;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ /* grid-template-rows: repeat(3, 1fr); */
+ gap: 5px;
+}
+
+.art {
+  padding: 10px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  color: white;
+  font-family:Libre Franklin family;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art h4 {
+  color: gray;
+  visibility: hidden;
+  position: relative;
+  bottom: 23px;
+  left: 10px;
+  
+
+}
+
+.art1 {
+  background: #283548;
+  grid-column: span 2;
+}
+
+.art2 {
+  background: blueviolet;
+
+}
+
+.art3 {
+  background: whitesmoke;
+  /* grid-column: span 2; */
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.art4 {
+  background: #376491;
+}
+
+.art5 {
+  background: royalblue;
+  /* grid-column: 1/4; */
+  grid-column-start: 4;
+  grid-row: 1/span 2;
+}
+
+.art6 {
+  display: none;
+}
+.art1::before {
+  content: '#';
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 50pt;
+  font-weight: 600;
+  position: relative;
+  top: -45px;
+  left: 6rem;
+}
