@@ -1,0 +1,30 @@
+.marquee-container{
+    display: flex;
+    align-items: center;
+    background: #25284c;
+    overflow: hidden;
+}
+
+.marquee{
+    font-size: 100px;
+    line-height: 1.3;
+    font-family: sans-serif;
+    padding: 24px 0;
+    color: #fff;
+    white-space: nowrap;
+    animation: marquee 5s infinite linear; /* notice the infinite */
+}
+
+.marquee:after{
+    content: "LONDON - PARIS - SYDNEY - TOKYO - NEW YORK - BERLIN - ROME";
+}
+
+
+@keyframes marquee{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
