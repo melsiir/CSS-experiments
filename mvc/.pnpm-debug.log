@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: create-react-app",
+      "code": "ENOENT",
+      "stack": "Error: not found: create-react-app\n    at getNotFoundError (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:41440:51)\n    at Function.whichSync [as sync] (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:41517:13)\n    at getCommandAbsolutePathSync (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:43082:44)\n    at default_1 (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:43091:32)\n    at /data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:179684:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/data/data/com.termux/files/home/learn/mvc",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: create-react-app",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: create-react-app\n    at getNotFoundError (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:41440:51)\n    at Function.whichSync [as sync] (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:41517:13)\n    at getCommandAbsolutePathSync (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:43082:44)\n    at default_1 (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:43091:32)\n    at /data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:179684:39"
+    }
+  }
+}
