@@ -1,0 +1,21 @@
+lockfileVersion: 5.3
+
+specifiers:
+  ionicons: ^6.0.0
+
+dependencies:
+  ionicons: 6.0.0
+
+packages:
+
+  /@stencil/core/2.10.0:
+    resolution: {integrity: sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A==}
+    engines: {node: '>=12.10.0', npm: '>=6.0.0'}
+    hasBin: true
+    dev: false
+
+  /ionicons/6.0.0:
+    resolution: {integrity: sha512-p83W1T8jZUlllHAjuIWaDQbI36OYqdrwcf8MhYbKW7+9rjGlCMP9+5OaR0W7tl0QfM004uAiy/zkc7HTpDNKgA==}
+    dependencies:
+      '@stencil/core': 2.10.0
+    dev: false

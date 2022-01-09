@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  background: url("img/bears.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+.sub {
+  color: white;
+  position: relative;
+  top: 20rem;
+  /* mix-blend-mode:overlay; */
+}
+
+h1 {
+  
+}

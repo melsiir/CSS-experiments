@@ -1,0 +1,136 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 600%);
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.35);
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 15pt;
+  border: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.welcome {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  top: 5rem;
+  left: 2rem;
+  background: linear-gradient(45deg, #5adaff, #31de97, #5468ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-color: text;
+  font-size: 2rem;
+  animation: wave 3s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.pop-up {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  min-width: 300px;
+  min-height: 260px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+.pop-up .exit {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.pop-up .pop-p {
+  position: relative;
+  left: 2.3rem;
+  top: 1.5rem;
+}
+.pop-up .pop-form {
+  align-items: center;
+  justify-content: center;
+}
+.pop-up .pop-form .input {
+  width: 200px;
+  margin: 10px;
+}
+.pop-up .pop-form label {
+  margin-left: 5px;
+  position: relative;
+  top: 2.5rem;
+  font-size: 20px;
+}
+.pop-up .pop-form .input {
+  padding: 0.5rem;
+  position: relative;
+  top: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.pop-up .pop-form .submit {
+  position: relative;
+  left: 6rem;
+  top: 3rem;
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.35);
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 15pt;
+  border: none;
+}
+.pop-up .exit {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 20pt;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.ipop-up::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 3px;
+  left: 2px;
+  border-radius: 2px;
+  top: 2px;
+  background-color: black;
+  transform: scaleX(1);
+  z-index: -1;
+}
+
+.efs {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+* {
+  
+}
+
+
+.ispine {
+  width: 50px;
+  height: 50px;
+  color: green;
+}
+body {
+  background: url('./img/bears.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+
+}
+
+.in {
+  background: gold;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 10px;
+  mix-blend-mode:  multiply;
+
+}

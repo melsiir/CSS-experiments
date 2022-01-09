@@ -1,0 +1,274 @@
+@font-face {
+  font-family: manrope;
+  src: url("./Manrope-Regular.ttf");
+}
+
+:root {
+  /**
+   * Colors 
+   */
+
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --white: hsl(0, 0%, 100%);
+
+  /**
+   * Typography 
+   */
+
+  --fs-13: 13px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+ion-icon {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+html {
+  font-family: manrope, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  max-height: 100vh;
+  padding: 20px;
+  display: flex20px;
+  justify-content: center20px;
+  align-items: center;
+  background: var(--light-grayish-blue);
+}
+
+
+.article-card {
+  display: grid;
+  grid-template-columns: 285px minmax(300px, 445px);
+  max-width: 730px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px hsla(0, 0%, 0%, 0.2),
+  25px 25px 20px hsla(0, 0%, 0%, 0.3),
+  100px 100px 80px hsla(0, 0%, 0%, 0.4)
+}
+.img-box {
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+
+.article-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  transition: all .5s ease;
+}
+
+
+.article-card:hover .article-banner {
+  transform: scale(1.1);
+}
+
+
+
+.article-content {
+  background: var(--white);
+  padding: 32px 40px;
+  border-radius: 0 10px 10px 0;
+}
+
+.article-title {
+   font-size: 20px;
+   color: var(--very-dark-grayish-blue);
+   margin-bottom: 12px;
+   line-height: 1.4;
+
+ }
+
+.article-text {
+    font-size: var(--fs-13);
+    color: var(desaturated-dark-blue);
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.article-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.auther {
+    display: flex;
+    align-items: center;
+
+}
+
+.auther-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.auther-name {
+  color: var(--very-dark-grayish-blue);
+  font-size: var(--fs-13);
+}
+
+
+.publish-date {
+  color: var(--grayish-blue);
+  font-size: var(fs-13);
+}
+
+.share {
+   position: relative;
+}
+
+.share-button {
+  pad: 6px;
+  border-radius: 20px;
+  font-size: 20px;
+  background: var(--light-grayish-blue);
+  color: var(--desaturated-dark-blue);
+  transition: all .25s ease;
+}
+
+.share-button:hover, .share-button:active {
+ color: var(--light-grayish-blue);
+  background: var(--desaturated-dark-blue);
+}
+
+.share-options {
+  --scale: 0;
+  --translateX: -50%;
+  --translateY: 0;
+
+  background: var(--very-dark-grayish-blue);
+  position: absolute;
+  bottom: calc(100%);
+  left: 50%;
+  transform: translate(var(--translateX), var(--translateX)) scale(var(--scale));
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -5px #0003;
+    transform-origin: button;
+    visibility: hidden;
+    transition: all .25s ease;
+}
+
+.share-options.active {
+  --scale: 1;
+  visibility: visible;
+}
+
+
+.share-options::after {
+  content: '';
+  background: var(--very-dark-grayish-blue);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+   z-index: -1;
+  
+}
+
+.share-options span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--grayish-blue);
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+.share-options ion-icon {
+  font-size: 22px;
+}
+
+.share-options ion-icon:hover,
+.article-title:hover,
+.auther-name:hover {
+  filter: invert(1);
+}
+
+@media screen and (max-width: 768px ) {
+  :root {
+    --fs-13: 12px;
+  }
+
+.article-card {
+  grid-template-columns: 1fr;
+  max-width: 294px;
+  overflow: hidden;
+}
+
+.img-box, .article-content { border-radius: 0;}
+ .img-box {
+   height: 180px;
+ }
+ .article-content {
+   padding: 30px 28px 20px;
+ }
+ .article-title {
+   font-size: 15px;
+ }
+ .article-text {
+   margin-bottom: 30px;
+ }
+ .article-content-footer {
+   display: relative;
+ }
+ auther-avatar {
+   width: 35px;
+   height: 35px;
+ }
+
+ .share {
+   position: static;
+   /* z-index: 1; */
+ }
+ .share-button {
+   font-size: 16px;
+ }
+ .share-options {
+  --scale: 1;
+  --translateX: 0;
+  --translateY: 100%;
+  inset: 20px 28px;
+  /* right: 50px; */
+
+
+
+ }
+
+}
+
+
+

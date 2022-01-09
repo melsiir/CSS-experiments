@@ -6,3 +6,6 @@ btn.addEventListener('click', () => {
   navigator.clipboard.writeText(t.innerText)
   alert('done')
 })
+
+
+   let b =   'hikhgfdde'

@@ -1,0 +1,11 @@
+* {
+  
+}
+  
+.shadow {
+  width: 200px;
+  color: black;
+  height: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 25px 50px -12px #3b82f620;
+}

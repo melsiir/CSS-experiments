@@ -1,0 +1,168 @@
+:root {
+ --gray: #D1D1C9;
+ --dark: #030502;
+ --limeblue: #7fcce2;
+ --blue: #006284;
+ --maui: #eef2f3;
+ --sensivity: #a1b0be;
+ --blue-dark: #363b48;
+ --white: hsl(0, 0%, 100%);
+ --very-dark-grayish-blue: hsl(217, 19%, 35%);
+ --bg: #f9fafb;
+ --bg-dark-l: #374151;
+ --bg-dark: #1f2937;
+ --bg-gray: #6b7280;
+
+
+}
+
+*, ::before, ::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+  background: var(--bg);
+  position: relative;
+}
+
+nav {
+ background: var(--bg-dark-l);
+ position: fixed;
+ height: 100vh;
+ top: 0;
+ left: 0;
+}
+
+.nav-wrapper {
+  /* position: relative; */
+  min-height: 100vh;
+  width: 65px;
+}
+
+.nav-block {
+  display: flex;
+  justify-content: center;
+   padding: 20px 10px;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-top: 10px;
+  
+}
+
+.nav-block ion-icon {
+  flex-wrap: 1;
+  cursor: pointer;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 38px;
+  color: var(--white);
+  margin: 5px;
+  --ionicon-stroke-width: 17px;
+  margin: 10px 0;
+
+}
+
+.nav-block ion-icon:hover {
+  color: var(--blue);
+}
+
+.sub-nav {
+  position: absolute;
+  height: 100vh;
+  width: 200px;
+  background: var(--bg-dark);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all .25s ease;
+}
+
+.nav-block:hover .sub-nav {
+  transform: translateX(65px);
+}
+
+.sub-nav h3, ul {
+  color: white;
+  position: relative;
+  left: 20px;
+  top: 80px;
+}
+
+.sub-nav ul {
+  list-style-type: none;
+  /* margin: 20px; */
+}
+
+.sub-nav li {
+  padding: 10px 0px;
+}
+
+.sub-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 200px;
+  margin: 10px 0;
+  transition: all .25s ease;
+}
+
+.hide {
+  display: none;
+}
+.search ion-icon {
+  font-size: 16px;
+  --ionicon-stroke-width: 40px;
+  color: var(--bg-gray);
+  opacity: 0.9;
+}
+
+.search .search-input {
+   padding-left:  5px;
+}
+
+.search input {
+  height: 1.5rem;
+  border: 0;
+  padding: 2px 2px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 190px;
+  border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.search .close-svg {
+  position: absolute;
+  top: 17px;
+  left: 170px;
+  height: 20px;
+}
+
+.search .search-svg {
+   position: absolute;
+   top: 17px;
+   left: 10px;
+   height: 20px;
+   
+}
+
+
+.nav-block:hover .search {
+   transform: translateX(65px);
+}
+
+.search label {
+  font-size: 20px;
+  color: white;
+}
+
+
