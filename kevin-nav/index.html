@@ -7,12 +7,14 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <svg xmlns="http://www.w3.org/2000/svg" class="menu ionicon" viewBox="0 0 512 512"><title>Menu</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"/>
-      </svg>
-      <nav id="prime-nav" class="prime-nav flex">
-        <ul class="active">
-          <li>
+    <header class="prime-head flex">
+      <div class="leaf">
+        <img src="leaf.svg" alt=""/>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="prime-nav" aria-expanded="false"><span class="sr-only">MENU</span></button>
+      <nav>
+      <ul id="prime-nav" class="prime-nav flex">
+        <li class="active">
             <a href="/"><span aria-hidden="true">00</span>Home</a>
           </li>
           <li>

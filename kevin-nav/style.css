@@ -4,13 +4,101 @@
  box-sizing: border-box;
 }
 
+body {
+  background: url("./aaron.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+  
 .menu {
   width: 2.5rem;
-  margin: 5px;
+  margin: 1px;
 }
-
+.leaf {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
 .flex {
   display: flex;
-  gap: 20px;
+  gap: var(--gap, 1.5rem)
+}
+
+.prime-head {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.prime-nav a {
+  text-decoration: none;
+}
+
+.prime-nav a:visited {
+  color: white;
+}
+.prime-nav a:link {
+  color: white;
+}
+
+.prime-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0  0% 0% / .75);
+  transform: translateX(100%);
+  transition: all .25s ease;
+}
+
+.prime-nav[data-visible="true"] {
+   transform: translateX(0%);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+  background-image: url('./close.svg');}
+@supports (backdrop-filter: blur(1rem)) {
+  .prime-nav {
+    background: hsl(0, 0%, 100%, .1);
+    backdrop-filter: blur(1rem);
+  }
 
 }
+
+.prime-nav a > [aria-hidden=true] {
+ font-weight: 700;
+ margin-inline-end: .75em;
+}
+
+@media (max-width: 35em) {
+    .prime-nav {
+      --gap: 2em;
+      position: fixed;
+      inset: 0 0 0 30%;
+      z-index: 1000;
+      flex-direction: column;
+      padding: min(30vh, 10em) 2em;
+    }    
+    .mobile-nav-toggle {
+      display: block;
+      z-index: 9999;
+      width: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      aspect-ratio: 1;
+      background-color: transparent;
+      background-image: url('menu.svg');
+      background-repeat: no-repeat;
+      border: 0;
+
+    }
+
+  }
+
