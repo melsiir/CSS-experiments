@@ -1,0 +1,50 @@
+* {
+  
+}
+:root {
+  --speed: 4s;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper h3::after, h3::before {
+  content: "";
+  /* height: 100%; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+h3::after {
+  background: black;
+  width: 0.15rem;
+  opacity: 1;
+  animation: blink 900ms steps(25) infinite,
+  typing var(--speed) steps(25) forwards;
+
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+h3 {
+  position: relative;
+}
+.wrapper h3::before {
+  background: white;
+  animation: typing var(--speed) steps(25) forwards;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}

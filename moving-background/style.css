@@ -1,0 +1,44 @@
+* {
+ margin: 0;  
+ padding: 0;
+}
+
+body {
+  background: linear-gradient(#537, #549);
+  height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 30px;
+} 
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header > * {
+  margin: 5px 10px;
+  color: white;
+}
+
+header ul li {
+  margin-right: 1rem;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 500;
+  
+}

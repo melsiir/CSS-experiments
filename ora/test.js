@@ -2,8 +2,12 @@ import ora from "ora";
 
 const spinner = ora("Loadingunicorns").start();
 
-setTimeout(() => {
-  spinner.color = "yellow";
+// const spin = () => {
+//   spinner.color = "blue";
+//
+//   spinner.text = "Loadingrainbows";
+// }
 
-  spinner.text = "Loadingrainbows";
-}, 1000);
+// spin()
+
+

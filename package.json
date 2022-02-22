@@ -1,6 +1,14 @@
 {
 	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"express": "^4.17.2",
 		"ionicons": "^6.0.0",
 		"ora": "^6.0.1"
+	},
+	"devDependencies": {
+		"@swc/cli": "^0.1.55",
+		"@swc/core": "^1.2.133",
+		"nodemon": "^2.0.15",
+		"typescript": "^4.5.4"
 	}
 }

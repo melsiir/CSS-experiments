@@ -1,0 +1,41 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "dependencies": {
+        "dotenv": "^10.0.0",
+        "esm": "^3.2.25",
+        "json-server": "^0.17.0",
+        "lite-server": "^2.6.1",
+        "live-server": "^1.2.1",
+        "nodemon": "^2.0.15",
+        "npm-gui": "^3.1.1",
+        "ora": "^6.0.1",
+        "reveal.js": "^4.2.1",
+        "sass": "^1.45.1"
+      }
+    },
+    "prefix": "/data/data/com.termux/files/usr/pnpm-global/5"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "/data/data/com.termux/files/home/.pnpm-store/v3",
+    "virtualStoreDir": "/data/data/com.termux/files/usr/pnpm-global/5/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/data/data/com.termux/files/usr/pnpm-global/5",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_SPEC_NOT_SUPPORTED_BY_ANY_RESOLVER",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "@create-next-app isn't supported by any available resolver.",
+      "code": "ERR_PNPM_SPEC_NOT_SUPPORTED_BY_ANY_RESOLVER",
+      "stack": "pnpm: @create-next-app isn't supported by any available resolver.\n    at Object.resolve (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:85783:17)\n    at async run (/data/data/com.termux/files/usr/lib/node_modules/pnpm/dist/pnpm.cjs:71433:23)"
+    }
+  }
+}
