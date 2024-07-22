@@ -16,7 +16,7 @@
   background-size: 300%;
   /* animation: move 10s infinite alternate; */
 }
-   
+
 #btn {
   /* visibility: hidden; */
 /* background: linear-gradient(45deg, #31de97, rgba(221,49,222,1)); */
@@ -26,7 +26,7 @@
  background-clip: text;
  background: dodgerblue;
  color: white;
- animation: move 5s infinite alternate;
+ animation: move 10s infinite alternate;
  border: 0;
  font-size: 1.2rem;
  padding: 9px;
@@ -43,7 +43,7 @@
     background-position: 0%;
   }
   100% {
-    background-position: 100%; 
+    background-position: 100%;
   }
 }
 
@@ -92,5 +92,5 @@
 .button-29:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
-} 
-  
+}
+

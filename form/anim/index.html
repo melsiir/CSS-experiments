@@ -1,0 +1,89 @@
+<html>
+<body>
+<div class="container">
+<!-- Example 1: Changing Color -->
+<div class="green-square green-red-alternate"></div>
+<!-- Example 2: Moving across the screen -->
+<div class="black-circle vertical-alternate-fast"></div>
+<!-- Example 3: On hover, changing color-->
+<div class="green-rounded-square color-transition"></div>
+</div>
+</body>
+</html>
+<style>
+.container {
+display: flex;
+flex-direction: row;
+overflow: hidden;
+}
+/* Example 1: Changing Color */
+.green-square {
+width: 200px;
+height: 200px;
+background-color: green;
+}
+.green-red-alternate {
+animation-name: to-red;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes to-red {
+from {
+background-color: green;
+}
+to {
+background-color: red;
+}
+}
+/* Example 2: Moving across the screen */
+.black-circle {
+width: 200px;
+height: 200px;
+border-radius: 100%;
+background-color: black;
+}
+/* Example 2a: Moving horizontal slowly */
+.horizontal-alternate {
+animation-name: left-to-right;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes left-to-right {
+from {
+margin-left: 0%;
+}
+to {
+margin-left: 100%;
+}
+}
+/* Example 2b: Moving vertically quickly */
+.vertical-alternate-fast {
+animation-name: top-to-bottom;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes top-to-bottom {
+from {
+margin-top: 0%;
+}
+to {
+margin-top: 100%;
+}
+}
+/* Example 3: Animation on hover */
+.green-rounded-square {
+width: 200px;
+height: 200px;
+background-color: green;
+border-radius: 1em;
+}
+.color-transition:hover {
+animation-name: to-red;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+</style>

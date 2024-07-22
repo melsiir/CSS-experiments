@@ -1,6 +1,7 @@
 {
 	"dependencies": {
-		"ionicons": "^6.0.0",
-		"ora": "^6.0.1"
+		"ionicons": "^7.4.0",
+		"ora": "^8.0.1",
+		"sass": "^1.77.8"
 	}
 }
