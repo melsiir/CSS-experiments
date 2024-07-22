@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
 * {
-  font-family: fantasy;  
+  font-family: fantasy;
 }
 
 .box {
@@ -21,8 +21,8 @@
 p {
   font-size: 8em;
   position: absolute;
-  top: -130px;
-  left: 90px;
+  top: -95px;
+  left: 85px;
   color: white;
   opacity: 0.5;
   font-family: Oswald;
